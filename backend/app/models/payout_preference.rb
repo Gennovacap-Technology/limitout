@@ -1,0 +1,2 @@
+class PayoutPreference < ApplicationRecord
+end

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  number_of_guests: MyString
+  cost: 1
+  allow_multiple_bookings_on_date: false
+
+two:
+  title: MyString
+  description: MyText
+  number_of_guests: MyString
+  cost: 1
+  allow_multiple_bookings_on_date: false

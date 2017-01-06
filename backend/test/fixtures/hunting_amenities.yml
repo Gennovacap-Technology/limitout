@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  food: MyString
+  lodging: MyString
+  gear: MyString
+  ammo: MyString
+  guns: MyString
+  vehicles: MyString
+
+two:
+  food: MyString
+  lodging: MyString
+  gear: MyString
+  ammo: MyString
+  guns: MyString
+  vehicles: MyString

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  address: MyString
+  city: MyString
+  state: MyString
+  acreage: 1
+  vegetation: MyText
+  water_sources: MyText
+  number_blinds: 1
+  blind_types: MyString
+  feeders: 1
+  natural_feeders: false
+
+two:
+  description: MyText
+  address: MyString
+  city: MyString
+  state: MyString
+  acreage: 1
+  vegetation: MyText
+  water_sources: MyText
+  number_blinds: 1
+  blind_types: MyString
+  feeders: 1
+  natural_feeders: false

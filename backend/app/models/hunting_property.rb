@@ -1,0 +1,2 @@
+class HuntingProperty < ApplicationRecord
+end

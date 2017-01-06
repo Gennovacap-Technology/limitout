@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  game_type: MyString
+  quality: MyString
+  abundance: MyString
+  number_animals: 1
+
+two:
+  game_type: MyString
+  quality: MyString
+  abundance: MyString
+  number_animals: 1
