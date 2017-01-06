@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170106051115) do
+ActiveRecord::Schema.define(version: 20170106060123) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "animals", force: :cascade do |t|
+    t.string   "animal_type"
+    t.string   "quality"
+    t.string   "abundance"
+    t.integer  "number_animals"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
   create_table "expeditions", force: :cascade do |t|
     t.string   "title"
@@ -23,15 +32,6 @@ ActiveRecord::Schema.define(version: 20170106051115) do
     t.boolean  "allow_multiple_bookings_on_date"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
-  end
-
-  create_table "animals", force: :cascade do |t|
-    t.string   "animal_type"
-    t.string   "quality"
-    t.string   "abundance"
-    t.integer  "number_animals"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
   end
 
   create_table "hunting_amenities", force: :cascade do |t|
@@ -98,6 +98,7 @@ ActiveRecord::Schema.define(version: 20170106051115) do
     t.text     "profile_e_description"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
+    t.string   "api_key"
   end
 
 end
