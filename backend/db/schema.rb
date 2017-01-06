@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 20170106051115) do
     t.datetime "updated_at",                      null: false
   end
 
-  create_table "games", force: :cascade do |t|
-    t.string   "game_type"
+  create_table "animals", force: :cascade do |t|
+    t.string   "animal_type"
     t.string   "quality"
     t.string   "abundance"
     t.integer  "number_animals"
