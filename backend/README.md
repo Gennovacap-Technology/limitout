@@ -66,3 +66,8 @@
   - gmail
   - yahoo
   - outlook
+
+##  hunting_property description:text address:string city:string state:string acreage:integer vegetation:text water_sources:text number_blinds:integer blind_types:string feeders:integer natural_feeders:boolean
+##  game game_type:string quality:string abundance:string number_animals:integer
+##  hunting_amenities food:string lodging:string gear:string ammo:string guns:string vehicles:string
+##  expedition title:string description:text number_of_guests:string cost:integer allow_multiple_bookings_on_date:boolean
