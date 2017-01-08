@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const conf = require('./gulp.conf');
 module.exports = {
   module: {
     loaders: [
@@ -21,24 +20,18 @@ module.exports = {
         loaders: [
           'babel-loader'
         ]
-      },
-      {
-        test: /.html$/,
-        loaders: [
-          'html-loader'
-        ]
       }
     ]
   },
   plugins: [
-    new webpack.ContextReplacementPlugin(
-      /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-      conf.paths.src
-    ),
     new webpack.LoaderOptionsPlugin({
       options: {},
       debug: true
     })
   ],
-  devtool: 'source-map'
+  devtool: 'source-map',
+  externals: {
+    'react/lib/ExecutionEnvironment': 'true',
+    'react/lib/ReactContext': 'true'
+  }
 };

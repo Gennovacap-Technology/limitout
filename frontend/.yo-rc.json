@@ -1,14 +1,14 @@
 {
-  "generator-fountain-angular2": {
+  "generator-fountain-react": {
     "version": "1.0.0-rc2",
     "props": {
-      "framework": "angular2",
+      "framework": "react",
       "modules": "webpack",
       "js": "babel",
       "ci": [],
       "css": "scss",
-      "resolved": "/usr/local/lib/node_modules/generator-fountain-webapp/node_modules/generator-fountain-angular2/generators/app/index.js",
-      "namespace": "fountain-angular2",
+      "resolved": "/Users/Xander/.nvm/versions/node/v6.9.4/lib/node_modules/generator-fountain-webapp/node_modules/generator-fountain-react/generators/app/index.js",
+      "namespace": "fountain-react",
       "argv": {
         "remain": [],
         "cooked": [],

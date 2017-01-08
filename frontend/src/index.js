@@ -1,20 +1,16 @@
-import 'core-js/client/shim';
-import 'zone.js/dist/zone';
+import 'babel-polyfill';
 
-import '@angular/common';
-import 'rxjs';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Router, Route, browserHistory} from 'react-router';
+
+import {Main} from './app/main';
 
 import './index.scss';
 
-import {enableProdMode} from '@angular/core';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {AppModule} from './app';
-
-if (process.env.NODE_ENV === 'production') {
-  enableProdMode();
-} else {
-  Error['stackTraceLimit'] = Infinity; // eslint-disable-line dot-notation
-  require('zone.js/dist/long-stack-trace-zone');
-}
-
-platformBrowserDynamic().bootstrapModule(AppModule);
+ReactDOM.render(
+  <Router history={browserHistory}>
+    <Route path="/" component={Main}/>
+  </Router>,
+  document.getElementById('root')
+);

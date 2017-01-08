@@ -1,22 +1,50 @@
-import {Component, Inject} from '@angular/core';
-import {Http} from '@angular/http';
+import React, {Component} from 'react';
+import axios from 'axios';
 
-@Component({
-  selector: 'fountain-techs',
-  template: require('./techs.html')
-})
-@Inject('Http')
-export class TechsComponent {
-  constructor(http: Http) {
-    this.http = http;
-    this.getTechs().subscribe(result => {
-      this.techs = result;
-    });
+import {Tech} from './tech';
+
+const styles = {
+  container: {
+    margin: '1rem'
+  },
+  h2: {
+    fontWeight: 300,
+    fontSize: '1.5rem'
+  },
+  techs: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around'
+  }
+};
+
+export class Techs extends Component {
+  constructor() {
+    super();
+    this.state = {techs: []};
   }
 
-  getTechs() {
-    return this.http
+  componentDidMount() {
+    axios
       .get('app/techs/techs.json')
-      .map(response => response.json());
+      .then(response => {
+        this.setState({techs: response.data});
+      });
+  }
+
+  render() {
+    return (
+      <div style={styles.container}>
+        <h2 style={styles.h2}>
+          Cooked with all these awesome technologies:
+        </h2>
+        <div style={styles.techs}>
+          {this.state.techs.map((tech, i) => (
+            <Tech key={i} tech={tech}/>
+          ))}
+        </div>
+      </div>
+    );
   }
 }

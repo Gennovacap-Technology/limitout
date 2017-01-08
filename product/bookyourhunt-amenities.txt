@@ -1,0 +1,41 @@
+Trip calculator based on variables
+ - number days
+ - number hunters
+ - number guests
+ - trophy fee
+
+
+ Price Includes:
+   Transport on territory
+   Transfer from/to airport
+   Guiding by PH
+   Field trophy preparation
+   Trophies
+   Home-cooked meals
+
+Terms of Payment:
+  Deposit: 25% based on tour price
+  Deposit deadline: 5 days after booking
+  Final payment: onsite
+
+ Cancellation:
+  The deposit is non-refundable. If a hunter is unsuccessful or cancels a scheduled hunt, he/she may choose to reschedule and transfer his/her deposit to a rescheduled hunt date. If, for some reason, the hunt is unsuccessful, we DO allow the cost of the hunt (NOT including lodging & meals at $75/day/person) to be transferred to another date.
+
+ Price DOES NOT include:
+   Ammunition
+   Laundry
+   Alcoholic drinks
+   Tips
+   Gun rental
+   Insurance
+   Tourist tax
+   Taxidermy and meat processing (this is the hunter's responsibility, but we are more than happy to help coordinate these if needed)
+   Skinning & quartering - an extra $50 (Animals MUST be quartered to go across state lines!)
+   Non-hunting guests - an additional $100 / day / person (includes all meals & lodging - space permitting)
+   Additional nights stay for our hunting guests (not including additional hunting days) - an extra fee of $100 / night - space permitting.
+   Additional hunting days - available for an extra fee of $300 / day / per person (includes an extra day of guide service, lodging, and meals - space permitting)
+   Trophy measurement
+   Gun permits
+
+ Wounding:
+  All hunts are run on a harvest or wound basis.
